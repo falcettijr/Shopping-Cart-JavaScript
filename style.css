@@ -1,9 +1,14 @@
-
-
+:root{
+   --background-color1: #70ACFF;
+   --background-color2: #569BFC;
+   --font-color1: #FCC456;
+   --font-color2: lightgrey;
+   --background-card: #1C2128;
+}
 body{
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom left, #70ACFF, #569BFC);
+    background: linear-gradient(to bottom left,var(--background-color1), var(--background-color2));
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -11,20 +16,23 @@ body{
    }
 
 .carrinho-container{
-    background-color: #1C2128;
-    color: #FCC456;
+    background-color: var(--background-card);
+    color: var(--font-color1);
     border-radius: 7px;
     padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
-h1{
-    color: #FCC456;
-}
-button{
-   background-color: #1C2128;
-   color: #FCC456;
-   border: none;
 
+h1{
+    color: var(--font-color1);
 }
+
+button{
+   background-color:var(--background-card);
+   color: var(--font-color1);
+   border: none;
+}
+
 header {
     display: flex;
     justify-content: center;
@@ -34,29 +42,39 @@ header {
 
 table{
     width:100%;
-    border: none:
-    background-color: #1C2128;       
+    border-collapse: collapse; 
+    background-color: var(--background-card);
+    border-radius: 10px;  
 }
+
+table th{
+    border:1px solid #404040;
+    background-color: #404040; 
+    border-collapse: collapse;     
+}
+
 table td{
     border: 1px solid #404040;
     padding: 10px;
-    background-color: #1C2128;
-    color: lightgrey;
+    background-color: var(--background-card);
+    color: var(--font-color2);
+    border-collapse: collapse;
 }
+
 
 .total-itens{
     text-align: center;
-    color: #FCC456;
+    color: var(--font-color1);
     font-size: larger;
 }
 
 .total-valor{
     text-align: center;
-    color: #FCC456;
+    color: var(--font-color1);
     font-size: larger;
 }
 
 table tfoot td:first-child{
     text-align: right;
-    color: #FCC456;
+    color: var(--font-color1);
 }
