@@ -3,37 +3,28 @@
     <head>
         <meta charset="utf-8">
         <title>Carrinho de Compras</title>
-        <style>
-            table{
-                width:100%;
-                border-collapse: collapse;                
-            }
-            table td{
-                border: 1px solid #000;
-                padding: 10px;
-            }
-            table tfoot td:first-child{
-                text-align: right;
-            }
-        </style>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Carrinho de Compras</h1>
         
+        <div class="carrinho-container">
+            <header>
+                <h1>Carrinho de Compras</h1> 
+            </header>
         <table>
             <thead>
                 <tr>
                     <th>Produto</th>
-                    <th>Valor Unitário</th>                    
-                    <th>Quantidade</th>                    
-                    <th>Valor Total</th>                    
+                    <th>Unitário</th>                    
+                    <th>Qtd</th>                    
+                    <th>Total</th>                    
                 </tr>
             </thead>
             <tfoot>
                 <tr>
                     <td colspan="2"><strong>TOTAL</strong></td>
-                    <td>2</td>
-                    <td>R$ 599,98</td>
+                    <td class="total-itens">2</td>
+                    <td class="total-valor">R$ 599,98</td>
                 </tr>
             </tfoot>
             <tbody>
@@ -59,9 +50,7 @@
                 </tr>
             </tbody>            
         </table>
-    
-        <script>            
-            
-        </script>
+    </div>
+        <script src="script.js"></script>
     </body>    
 </html>

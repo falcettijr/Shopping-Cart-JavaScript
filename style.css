@@ -1,0 +1,62 @@
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom left, #70ACFF, #569BFC);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+.carrinho-container{
+    background-color: #1C2128;
+    color: #FCC456;
+    border-radius: 7px;
+    padding: 10px;
+}
+h1{
+    color: #FCC456;
+}
+button{
+   background-color: #1C2128;
+   color: #FCC456;
+   border: none;
+
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+table{
+    width:100%;
+    border: none:
+    background-color: #1C2128;       
+}
+table td{
+    border: 1px solid #404040;
+    padding: 10px;
+    background-color: #1C2128;
+    color: lightgrey;
+}
+
+.total-itens{
+    text-align: center;
+    color: #FCC456;
+    font-size: larger;
+}
+
+.total-valor{
+    text-align: center;
+    color: #FCC456;
+    font-size: larger;
+}
+
+table tfoot td:first-child{
+    text-align: right;
+    color: #FCC456;
+}
