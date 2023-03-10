@@ -1,10 +1,13 @@
 :root{
-   --background-color1: #70ACFF;
-   --background-color2: #569BFC;
+   --background-color1: #7da2d6;
+   --background-color2: #466085;
    --font-color1: #FCC456;
    --font-color2: lightgrey;
    --background-card: #1C2128;
 }
+
+/*----Body----*/
+
 body{
     margin: 0;
     padding: 0;
@@ -14,6 +17,8 @@ body{
     justify-content: center;
     align-items: center;
    }
+
+/*----Tabela----*/
 
 .carrinho-container{
     background-color: var(--background-card);
@@ -40,6 +45,8 @@ header {
     margin-bottom: 5px;
 }
 
+
+
 table{
     width:100%;
     border-collapse: collapse; 
@@ -61,6 +68,10 @@ table td{
     border-collapse: collapse;
 }
 
+table tfoot td:first-child{
+    text-align: right;
+    color: var(--font-color1);
+}
 
 .total-itens{
     text-align: center;
@@ -72,9 +83,4 @@ table td{
     text-align: center;
     color: var(--font-color1);
     font-size: larger;
-}
-
-table tfoot td:first-child{
-    text-align: right;
-    color: var(--font-color1);
 }

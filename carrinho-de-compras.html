@@ -2,7 +2,7 @@
 <html lang="pt-br">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Carrinho de Compras</title>
         <link rel="stylesheet" href="style.css">
     </head>
@@ -21,34 +21,35 @@
                     <th>Total</th>                    
                 </tr>
             </thead>
-            <tfoot>
-                <tr>
-                    <td colspan="2"><strong>TOTAL</strong></td>
-                    <td class="total-itens">2</td>
-                    <td class="total-valor">R$ 599,98</td>
-                </tr>
-            </tfoot>
+
             <tbody>
-                <tr id="produto-01">
+                <tr>
                     <td>Mouse Gamer Logitech</td>
-                    <td data-valorunitario="199.99">R$ 199,99</td>
-                    <td>
-                        <button>-</button>                        
-                        1
-                        <button>+</button>
+                    <td class="valorUnitario" data-valorunitario="199.99">R$ 199,99</td>
+                    <td class="quantidade" data-quantidade="2">
+                        <button class="btn-decrementar">-</button>                        
+                        <span>2</span>
+                        <button class="btn-incrementar">+</button>
                     </td>
-                    <td>R$ 199,99</td>
+                    <td class="valorTotalProduto" data-totalproduto="399.98">R$ 399,98</td>
                 </tr>
                 <tr>
                     <td>Teclado Gamer Logitech</td>
                     <td data-valorunitario="399.99">R$ 399,99</td>
                     <td>
-                        <button>-</button>                        
-                        1
-                        <button>+</button>    
+                        <button class="btn-decrementar">-</button>                        
+                        <span>1</span>
+                        <button class="btn-incrementar">+</button>    
                     </td>
                     <td>R$ 399,99</td>
                 </tr>
+                <tfoot>
+                    <tr>
+                        <td colspan="2"><strong>TOTAL</strong></td>
+                        <td class="total-itens">3</td>
+                        7<td class="total-valor">R$ 799.97</td>
+                    </tr>
+                </tfoot>
             </tbody>            
         </table>
     </div>
