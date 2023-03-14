@@ -23,7 +23,7 @@ for(let btn of btnsDecrementar) {
 
         //Alterar informações na tabela
         tdQuantidade.querySelector("span").innerHTML = novaQuantidade;
-        tdValorTotalProduto.textContent = "R$ " + novoValorTotal;
+        tdValorTotalProduto.textContent = ("R$ " + novoValorTotal).replace(".", ",");
 
         console.log(novaQuantidade);
         console.log(novoValorTotal);
