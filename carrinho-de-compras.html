@@ -6,54 +6,53 @@
         <title>Carrinho de Compras</title>
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>        
+    <body>
+        
         <div class="carrinho-container">
             <header>
                 <h1>Carrinho de Compras</h1> 
             </header>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Produto</th>
-                        <th>Unitário</th>                    
-                        <th>Qtd</th>                    
-                        <th>Total</th>                    
-                    </tr>
-                </thead>
+        <table>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Unitário</th>                    
+                    <th>Qtd</th>                    
+                    <th>Total</th>                    
+                </tr>
+            </thead>
 
+            <tbody>
+                <tr>
+                    <td>Mouse Gamer Logitech</td>
+                    <td class="valorUnitario" data-valorunitario="199.99">R$ 199,99</td>
+                    <td class="quantidade" data-quantidade="2">
+                        <button class="btn-decrementar">-</button>                        
+                        <span>2</span>
+                        <button class="btn-incrementar">+</button>
+                    </td>
+                    <td class="valorTotalProduto" data-valortotalproduto="399.98">R$ 399,98</td>
+                </tr>
+                <tr>
+                    <td>Teclado Gamer Logitech</td>
+                    <td data-valorunitario="399.99">R$ 399,99</td>
+                    <td>
+                        <button class="btn-decrementar">-</button>                        
+                        <span>1</span>
+                        <button class="btn-incrementar">+</button>    
+                    </td>
+                    <td>R$ 399,99</td>
+                </tr>
                 <tfoot>
                     <tr>
                         <td colspan="2"><strong>TOTAL</strong></td>
                         <td class="total-itens">3</td>
-                        <td class="total-valor">R$ 799,97</td>
+                        <td class="total-valor">R$ 799.97</td>
                     </tr>
                 </tfoot>
-
-                <tbody>
-                    <tr>
-                        <td>Mouse Gamer Logitech</td>
-                        <td class="valorUnitario" data-valorunitario="199.99">R$ 199,99</td>
-                        <td class="quantidade" data-quantidade="2">
-                            <button class="btn-decrementar">-</button>                        
-                            <span>2</span>
-                            <button class="btn-incrementar">+</button>
-                        </td>
-                        <td class="valorTotalProduto" data-totalproduto="399.98">R$ 399,98</td>
-                    </tr>
-                    <tr>
-                        <td>Teclado Gamer Logitech</td>
-                        <td data-valorunitario="399.99">R$ 399,99</td>
-                        <td>
-                            <button class="btn-decrementar">-</button>                        
-                            <span>1</span>
-                            <button class="btn-incrementar">+</button>    
-                        </td>
-                        <td>R$ 399,99</td>
-                    </tr>                    
-                </tbody>            
-            </table>
-        </div>
-
+            </tbody>            
+        </table>
+    </div>
         <script src="script.js"></script>
     </body>    
 </html>

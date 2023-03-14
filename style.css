@@ -16,7 +16,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-}
+   }
 
 /*----Tabela----*/
 
@@ -36,6 +36,7 @@ button{
    background-color:var(--background-card);
    color: var(--font-color1);
    border: none;
+   cursor: pointer;
 }
 
 header {
