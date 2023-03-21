@@ -11,6 +11,10 @@
 
 /*----Body----*/
 
+*{
+    box-sizing: border-box;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -27,7 +31,7 @@ body{
 .carrinho-container{
     background-color: var(--background-card);
     color: var(--font-destaque);
-    border-radius: 7px;
+    border-radius: 10px;
     padding: 10px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
@@ -51,7 +55,6 @@ header {
 }
 
 
-
 table{
     width:100%;
     border-collapse: collapse; 
@@ -71,6 +74,10 @@ table td{
     background-color: var(--background-card);
     color: var(--font-conteudo);
     border-collapse: collapse;
+}
+
+td{
+    text-align: center;
 }
 
 table tfoot td:first-child{
