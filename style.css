@@ -1,41 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
 :root{
-   --background-color1: #7da2d6;
-   --background-color2: #466085;
-   --font-color1: #FCC456;
-   --font-color2: lightgrey;
+   --background-clara: #7da2d6;
+   --background-escura: #466085;
+   --font-destaque: #FCC456;
+   --font-conteudo: lightgrey;
    --background-card: #1C2128;
+   --cor-linha: #404040;
 }
 
 /*----Body----*/
 
+*{
+    box-sizing: border-box;
+}
+
 body{
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom left,var(--background-color1), var(--background-color2));
+    background: linear-gradient(to bottom left,var(--background-clara), var(--background-escura));
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+    font-family: 'Roboto', sans-serif;
+   }
 
 /*----Tabela----*/
 
 .carrinho-container{
     background-color: var(--background-card);
-    color: var(--font-color1);
-    border-radius: 7px;
+    color: var(--font-destaque);
+    border-radius: 10px;
     padding: 10px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 h1{
-    color: var(--font-color1);
+    color: var(--font-destaque);
 }
 
 button{
    background-color:var(--background-card);
-   color: var(--font-color1);
+   color: var(--font-destaque);
    border: none;
+   cursor: pointer;
 }
 
 header {
@@ -46,7 +55,6 @@ header {
 }
 
 
-
 table{
     width:100%;
     border-collapse: collapse; 
@@ -55,32 +63,36 @@ table{
 }
 
 table th{
-    border:1px solid #404040;
-    background-color: #404040; 
+    border:1px solid var(--cor-linha);
+    background-color: var(--cor-linha); 
     border-collapse: collapse;     
 }
 
 table td{
-    border: 1px solid #404040;
+    border: 1px solid var(--cor-linha);
     padding: 10px;
     background-color: var(--background-card);
-    color: var(--font-color2);
+    color: var(--font-conteudo);
     border-collapse: collapse;
+}
+
+td{
+    text-align: center;
 }
 
 table tfoot td:first-child{
     text-align: right;
-    color: var(--font-color1);
+    color: var(--font-destaque);
 }
 
 .total-itens{
     text-align: center;
-    color: var(--font-color1);
+    color: var(--font-destaque);
     font-size: larger;
 }
 
 .total-valor{
     text-align: center;
-    color: var(--font-color1);
+    color: var(--font-destaque);
     font-size: larger;
 }
