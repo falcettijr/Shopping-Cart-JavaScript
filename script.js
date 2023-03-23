@@ -1,21 +1,23 @@
 var btnsDecrementar = document.querySelectorAll(".btn-decrementar");
 var btnsIncrementar = document.querySelectorAll(".btn-incrementar");
-
-//--------------------------------------------------------------------
-
 let cupomInput = document.getElementById("cupom");
 let aplicarCupomBtn = document.getElementById("aplicar-cupom");
 
 aplicarCupomBtn.addEventListener("click", function() {
   const cupom = cupomInput.value;
-  // Lógica para verificar o código do cupom e aplicar um desconto
   
   let total = parseFloat(document.querySelector(".total-valor").textContent.replace("R$ ", "").replace(",", "."));
-  console.log(total);/* obter o valor total do carrinho */
-  const DESCONTO_CUPOM = 0.1; // 10% de desconto
+  const DESCONTO_CUPOM1 = 0.1; // 10% de desconto
+  const DESCONTO_CUPOM2 = 0.2;  // 20% de desconto
   
-  if (cupom === "MEUCUPOM") {
-    const desconto = total * DESCONTO_CUPOM;
+  if (cupom === "CUPOM1") {
+    const desconto = total * DESCONTO_CUPOM1;
+    const totalComDesconto = total - desconto;
+    
+    document.querySelector(".total-valor").textContent = formatarNumeros(totalComDesconto);
+
+  } else if (cupom === "CUPOM2") {
+    const desconto = total * DESCONTO_CUPOM2;
     const totalComDesconto = total - desconto;
     
     document.querySelector(".total-valor").textContent = formatarNumeros(totalComDesconto);
@@ -25,10 +27,6 @@ aplicarCupomBtn.addEventListener("click", function() {
   }
 
 });
-
-
-//--------------------------------------------------------------------
-
 
 function atualizaTotais() {
   let todosTdsQuantidade = document.querySelectorAll("td.quantidade");
