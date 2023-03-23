@@ -80,6 +80,16 @@ td{
     text-align: center;
 }
 
+.cupom{
+    text-align: right;
+}
+
+input{
+    margin-bottom: 5px;
+    margin: 0 auto; /* adição de margem automática */
+    width: 20%;
+}
+
 table tfoot td:first-child{
     text-align: right;
     color: var(--font-destaque);

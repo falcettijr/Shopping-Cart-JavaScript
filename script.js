@@ -1,6 +1,35 @@
 var btnsDecrementar = document.querySelectorAll(".btn-decrementar");
 var btnsIncrementar = document.querySelectorAll(".btn-incrementar");
 
+//--------------------------------------------------------------------
+
+let cupomInput = document.getElementById("cupom");
+let aplicarCupomBtn = document.getElementById("aplicar-cupom");
+
+aplicarCupomBtn.addEventListener("click", function() {
+  const cupom = cupomInput.value;
+  // Lógica para verificar o código do cupom e aplicar um desconto
+  
+  let total = parseFloat(document.querySelector(".total-valor").textContent.replace("R$ ", "").replace(",", "."));
+  console.log(total);/* obter o valor total do carrinho */
+  const DESCONTO_CUPOM = 0.1; // 10% de desconto
+  
+  if (cupom === "MEUCUPOM") {
+    const desconto = total * DESCONTO_CUPOM;
+    const totalComDesconto = total - desconto;
+    
+    document.querySelector(".total-valor").textContent = formatarNumeros(totalComDesconto);
+
+  } else {
+    alert("Cupom inválido");
+  }
+
+});
+
+
+//--------------------------------------------------------------------
+
+
 function atualizaTotais() {
   let todosTdsQuantidade = document.querySelectorAll("td.quantidade");
   let novaQuantidadeTotal = 0;
