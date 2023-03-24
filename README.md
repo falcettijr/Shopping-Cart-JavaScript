@@ -44,7 +44,7 @@ Os arquivos `style.css` e `script.js` contêm todo o estilo e funcionalidade, re
 Exemplo de Uso
 --------------
 
-![imagem do carrinho de compras](carrinhoScreenshot.png)
+![imagem do carrinho de compras](carrinhoScreenshot2.png)
 
 Contribuições
 -------------
