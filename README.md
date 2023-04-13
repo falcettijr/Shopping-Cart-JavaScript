@@ -13,16 +13,18 @@ Funcionalidades
 *   Adicionar itens ao carrinho
 *   Remover itens do carrinho
 *   Atualizar a quantidade de itens no carrinho
+*   Adicionar cupom de desconto: Utilize os cupons CUPOM1 e CUPOM2 para adicionar o desconto.
+*   Verifica se o cupom já foi utilizado.
 *   Calcular o preço total da compra
 
 Como usar
 ---------
 
-Basta baixar os arquivos deste repositório e abrir o arquivo `carrinho-de-compras.html` em seu navegador web.
+Basta baixar os arquivos deste repositório e abrir o arquivo `index.html` em seu navegador web.
 
 ```bash
-git clone https://github.com/canis-lupus-solutions/teste-001-sergio.git
-cd teste-001-sergio
+git clone https://github.com/falcettijr/Shopping-Cart-JavaScript.git
+cd shopping-cart-javaScript.git
 ```
 
 Estrutura de diretórios
@@ -32,14 +34,13 @@ O projeto está organizado da seguinte forma:
 
 ```text
 carrinho-de-compras/
-├── css/
-│   ├── style.css
-├── js/
-│   ├── script.js
-└── carrinho-de-compras.html
+├── style.css
+├── script.js
+└── index.html
 ```
 
-Os arquivos `style.css` e `script.js` contêm todo o estilo e funcionalidade, respectivamente. O arquivo `carrinho-de-compras.html` é onde todo o conteúdo do carrinho de compras é exibido.
+Os arquivos `style.css` e `script.js` contêm todo o estilo e funcionalidade, respectivamente.
+O arquivo `index.html` é onde todo o conteúdo do carrinho de compras é exibido.
 
 Exemplo de Uso
 --------------
