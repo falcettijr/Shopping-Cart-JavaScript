@@ -1,46 +1,33 @@
-Carrinho de Compras com HTML, CSS e JavaScript
+Lista de Tarefas com HTML, CSS e JavaScript
 ==============================================
 
-Este é um simples carrinho de compras feito com as seguintes tecnologias:
+Este projeto consiste em uma lista de tarefas que pode ser gerenciada pelo usuário. 
+A interface é criada utilizando:
 
 *   HTML
 *   CSS
 *   JavaScript
 
+É possível adicionar, marcar e excluir tarefas da lista, tornando o gerenciamento mais simples e organizado.
+
+
 Funcionalidades
 ---------------
 
-*   Adicionar itens ao carrinho
-*   Remover itens do carrinho
-*   Atualizar a quantidade de itens no carrinho
-*   Adicionar cupom de desconto: Utilize os cupons CUPOM1 e CUPOM2 para adicionar o desconto.
-*   Verifica se o cupom já foi utilizado.
-*   Calcular o preço total da compra
+*   Adicionar tarefas
+*   Marcar tarefas como concluídas
+*   Excluir tarefas
 
-Como usar
----------
 
-Basta baixar os arquivos deste repositório e abrir o arquivo `index.html` em seu navegador web.
+## Instruções de uso
+Para utilizar a lista de tarefas, siga as instruções abaixo:
 
-```bash
-git clone https://github.com/falcettijr/Shopping-Cart-JavaScript.git
-cd shopping-cart-javaScript.git
-```
+1. Abra o arquivo `index.html` em seu navegador web.
+2. Digite o nome de uma tarefa na caixa de texto na parte superior da página.
+3. Clique no botão "Adicionar" ou pressione a tecla "Enter" para adicionar a tarefa à lista.
+4. Para marcar uma tarefa como concluída, clique na caixa de seleção próxima à tarefa.
+5. Para excluir uma tarefa da lista, clique no botão "Deletar" ao lado da tarefa.
 
-Estrutura de diretórios
------------------------
-
-O projeto está organizado da seguinte forma:
-
-```text
-carrinho-de-compras/
-├── style.css
-├── script.js
-└── index.html
-```
-
-Os arquivos `style.css` e `script.js` contêm todo o estilo e funcionalidade, respectivamente.
-O arquivo `index.html` é onde todo o conteúdo do carrinho de compras é exibido.
 
 Exemplo de Uso
 --------------
@@ -55,7 +42,6 @@ Contribuições são sempre bem-vindas. Sinta-se à vontade para abrir uma issue
 Autores
 -------
 
-*  [Leonardo de Aguiar](https://github.com/leoap)
 *  [Sergio Falcetti](https://github.com/falcettijr)
 
 Licença

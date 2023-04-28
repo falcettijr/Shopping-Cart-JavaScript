@@ -3,6 +3,18 @@ var btnsIncrementar = document.querySelectorAll(".btn-incrementar");
 let cupomInput = document.getElementById("cupom");
 let aplicarCupomBtn = document.getElementById("aplicar-cupom");
 let cuponsUsados = {};
+let inputCep = document.getElementById("cep");
+
+
+inputCep.addEventListener("keyup", async function(){
+  let cepDigitado = this.value;
+  if(cepDigitado.length == 8){
+    let url = "https://viacep.com.br/ws/" + cepDigitado + "/json/";
+    let retorno = await fetch(url)
+    let json = await retorno.json();
+    console.log(json);
+  }
+});
 
 aplicarCupomBtn.addEventListener("click", function() {
   const cupom = cupomInput.value;
